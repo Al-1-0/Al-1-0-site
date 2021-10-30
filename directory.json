@@ -1,0 +1,37 @@
+[
+    {
+        "userId": 1,
+        "firstName": "Karen",
+        "lastName": "Willis",
+        "phoneNumber": "01632 960726",
+        "emailAddress": "karen.willis@webdevelopment.com"
+    },
+    {
+        "userId": 2,
+        "firstName": "Jack",
+        "lastName": "Letterman",
+        "phoneNumber": "01632 960859",
+        "emailAddress": "jack.letterman@webdevelopment.com"
+    },
+    {
+        "userId": 3,
+        "firstName": "Daniel",
+        "lastName": "Hughes",
+        "phoneNumber": "01632 960763",
+        "emailAddress": "daniel.hughes@webdevelopment.com"
+    },
+    {
+        "userId": 4,
+        "firstName": "Davina",
+        "lastName": "Neo",
+        "phoneNumber": "01632 960653",
+        "emailAddress": "davina.neo@webdevelopment.com"
+    },
+    {
+        "userId": 5,
+        "firstName": "Joseph",
+        "lastName": "McLaren",
+        "phoneNumber": "01632 960377",
+        "emailAddress": "joseph.mclaren@webdevelopment.com"
+    }
+]
