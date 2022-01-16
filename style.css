@@ -1,5 +1,40 @@
 @charset "UTF-8";
 
+/* Custom properties/variables  */
+
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #303841;
+  --main-purple: #77457d;
+  --main-green: #457d77;
+}
+
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+  /* Set font size for easy rem calculations
+   * default document font size = 16px, 1rem = 16px, 100% = 16px
+   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+  */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #ffe;
 }
@@ -8,22 +43,22 @@ h1 {
   font-weight: bold;
   font-size: 80px;
   color: red;
-  text-align: left;
+  text-align: center;
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 h2 {
   font-family: 'Inter', sans-serif;
   font-weight: bolder;
   font-size: 34px;
-  text-align: left;
+  text-align: center;
   padding-top: 50px;
   padding-left: 5%;
   padding-right: 5%;
-  padding-bottom: 120px;
+  padding-bottom: 3vh;
 }
 
 h3 {
@@ -31,11 +66,11 @@ h3 {
   font-weight: bold;
   font-size: 30px;
   color: red;
-  text-align: left;
+  text-align: center;
   padding-top: 20px;
   padding-left: 5%;
   padding-right: 5%;
-  padding-bottom: 10px;
+  padding-bottom: 3vh;
 }
 
 .h3-red {
@@ -51,9 +86,10 @@ h3 {
 }
 p {
   font-family: 'Inter', sans-serif;
-  font-size: 20px;
+  font-size: 1.6rem;
   padding-left: 5%;
   padding-right: 5%;
+  padding-bottom: 3vh;
   text-align: left;
 }
 
@@ -69,9 +105,112 @@ p {
   /* background-color: #000; */
   /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
 }
+
+/* About Section */
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 100%;
+  background: var(--main-blue);
+}
+
+.about-section > p {
+  font-size: 1.6rem;
+  font-weight: 200;
+  color: var(--main-white);
+}
+
+.about-section-header {
+  text-align: left;
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  color: var(--main-white);
+}
+
+@media (max-width: 28.75em) {
+  .about-section-header {
+    font-size: 4rem;
+  }
+}
+
+/* Services section */
+
+.services-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 100%;
+  height: 100vh;
+  background: var(--main-green);
+}
+
+.services-section > p {
+  font-size: 1.6rem;
+  font-weight: 200;
+  color: var(--main-white);
+}
+
+.services-section-header {
+  text-align: left;
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  color: var(--main-white);
+}
+
+@media (max-width: 28.75em) {
+  .services-section-header {
+    font-size: 4rem;
+  }
+}
+/* Grid for Skills Icons */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 30.625em) {
+  .about-section {
+    padding: 6rem 1rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skills {
+  background: var(--main-purple);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+.code {
+  color: var(--main-purple);
+  transition: color 0.3s ease-out;
+}
+
+.skills:hover .code {
+  color: #ff7f50;
+}
+
+.skills-title {
+  font-size: 1.6rem;
+  padding: 2rem 0.5rem;
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
+}
+
 a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.6rem;
   color: var(--main-white);
 }
 a:link {
@@ -95,6 +234,8 @@ ul {
 .container {
   display: flex;
   justify-content: center;
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
 }
 
 /*  New Navigation */
@@ -146,7 +287,7 @@ body input:checked + label span:last-child {
   transform: rotate(-405deg);
 }
 body input ~ nav {
-  background-color: transparent; 
+  background-color: transparent;
   position: fixed;
   top: 0;
   left: 50%;
@@ -211,7 +352,6 @@ body input:checked ~ nav > ul > li {
   height: auto;
   max-width: 400px;
   object-fit: cover;
-
 }
 
 /* Socials */
@@ -364,7 +504,7 @@ header {
 #form {
   position: relative;
   width: 400px;
-  margin: 50px auto 100px auto;
+  margin: 100px auto 100px auto;
 }
 
 input {
@@ -421,7 +561,7 @@ textarea:hover {
 }
 
 #submit {
-  width: 402px;
+  width: 370px;
 
   padding: 0;
   margin: -5px 0px 0px 0px;
