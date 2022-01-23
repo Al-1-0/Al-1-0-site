@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* Custom properties/variables  */
+  /* Custom properties/variables  */
 
 :root {
   --main-white: #f0f0f0;
@@ -11,13 +11,13 @@
   --main-green: #457d77;
 }
 
-/* Base reset */
+  /* Base reset */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* box-sizing and font sizing */
+  /* box-sizing and font sizing */
 *,
 *::before,
 *::after {
@@ -93,7 +93,7 @@ p {
   text-align: left;
 }
 
-/* Welcome section */
+  /* Welcome section */
 
 .welcome-section {
   display: flex;
@@ -106,7 +106,7 @@ p {
   /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
 }
 
-/* About Section */
+  /* About Section */
 
 .about-section {
   display: flex;
@@ -135,7 +135,7 @@ p {
   }
 }
 
-/* Services section */
+  /* Services section */
 
 .services-section {
   display: flex;
@@ -147,8 +147,12 @@ p {
 }
 
 .services-section > p {
+  position: relative;
+  margin: 0 auto;
   font-size: 1.6rem;
   font-weight: 200;
+  text-align: center;
+  max-width: 80%;
   color: var(--main-white);
 }
 
@@ -164,7 +168,18 @@ p {
     font-size: 4rem;
   }
 }
-/* Grid for Skills Icons */
+
+  /* Contact Section */
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 100%;
+  height: 100vh;
+}
+
+  /* Grid for Skills Icons */
 
 .skills-grid {
   display: grid;
@@ -178,11 +193,11 @@ p {
 
 @media (max-width: 30.625em) {
   .about-section {
-    padding: 6rem 1rem;
+  padding: 6rem 1rem;
   }
 
   .skills-grid {
-    grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   }
 }
 
@@ -238,7 +253,7 @@ ul {
   margin-right: 1.6rem;
 }
 
-/*  New Navigation */
+  /*  New Navigation */
 
 body h1 > span {
   text-transform: none;
@@ -354,7 +369,7 @@ body input:checked ~ nav > ul > li {
   object-fit: cover;
 }
 
-/* Socials */
+  /* Socials */
 
 .fa-twitter {
   background: #ffe;
@@ -395,7 +410,7 @@ body input:checked ~ nav > ul > li {
   flex-wrap: wrap;
 }
 
-/* Contact form styles */
+  /* Contact form styles */
 
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
 
@@ -443,7 +458,7 @@ input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
   font-weight: bold;
 }
 
-/* on hover placeholder */
+  /* on hover placeholder */
 
 input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
   color: black;
@@ -509,7 +524,7 @@ header {
 
 input {
   font-family: 'Lato', sans-serif;
-  font-size: 0.875em;
+  font-size: 1.2em;
   width: 370px;
   height: 50px;
   padding: 0px 15px 0px 15px;
@@ -528,7 +543,7 @@ input {
 }
 
 input:hover {
-  background: #24A159;
+  background: var(--main-green);
   color: black;
   font-weight: bold;
 }
@@ -545,7 +560,7 @@ textarea {
 
   color: black;
   font-family: 'Lato', sans-serif;
-  font-size: 0.875em;
+  font-size: 1.2em;
 
   border: solid 1px black;
 
@@ -556,7 +571,7 @@ textarea {
 }
 
 textarea:hover {
-  background: #24A159;
+  background: var(--main-green);
   color: black;
 }
 
