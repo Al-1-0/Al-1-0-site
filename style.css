@@ -35,9 +35,9 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background-color: #ffe;
-}
+/* body {
+  background-color: var(--main-gray);
+} */
 h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -54,11 +54,12 @@ h2 {
   font-family: 'Inter', sans-serif;
   font-weight: bolder;
   font-size: 34px;
+  color: var(--main-green);
   text-align: center;
-  padding-top: 50px;
+  padding-top: 1vh;
   padding-left: 5%;
   padding-right: 5%;
-  padding-bottom: 3vh;
+  padding-bottom: 1vh;
 }
 
 h3 {
@@ -103,10 +104,27 @@ p {
   align-items: center;
   width: 100%;
   height: 100vh;
-  /* background-color: #000; */
+  background: var(--main-gray);
   /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
 }
+.welcome-section > p {
+  font-size: 1.6rem;
+  font-weight: 200;
+  color: var(--main-green);
+}
 
+.welcome-section-header {
+  text-align: left;
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  color: var(--main-green);
+}
+
+@media (max-width: 28.75em) {
+  .welcome-section-header {
+    font-size: 4rem;
+  }
+}
   /* About Section */
 
 .about-section {
@@ -114,12 +132,17 @@ p {
   flex-direction: column;
   justify-content: left;
   width: 100%;
+  height: 75vh;
   background: var(--main-green);
 }
 
 .about-section > p {
+  font-family: 'Courier New', Courier, monospace;
   font-size: 1.6rem;
-  font-weight: 200;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 1.5vh;
+  text-align: center;
   color: var(--main-white);
 }
 
@@ -143,8 +166,8 @@ p {
   flex-direction: column;
   justify-content: left;
   width: 100%;
-  height: 100vh;
-  background: var(--main-green);
+  height: 75vh;
+  background: var(--main-blue);
 }
 
 .services-section > p {
@@ -187,7 +210,7 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 1rem;
   width: 100%;
-  max-width: 1280px;
+  max-width: 50%;
   margin: 0 auto;
   margin-bottom: 1rem;
 }
@@ -209,7 +232,7 @@ p {
 }
 
 .code {
-  color: var(--main-purple);
+  color: #ff7f50;
   transition: color 0.3s ease-out;
 }
 
@@ -266,7 +289,7 @@ ul {
     display: table;
     padding: 8px 23px;
     background: #000;
-    color: #fff;
+    color: var(--main-gray);
     font-size: 13px;
     text-decoration: none;
     text-transform: uppercase;
