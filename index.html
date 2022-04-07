@@ -13,8 +13,25 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="cards.css"rel="stylesheet">
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script src="https://kit.fontawesome.com/7aa7ff192f.js" crossorigin="anonymous"></script>
+<script src="js/react.development.min.js"></script>
+<script src="js/react-dom.development.min.js"></script>
+<script src="js/browser.min.js"></script>
+<style>
+  .col-container {
+      display: table;
+      width: 100%;
+  }
+  .col {
+      display: table-cell;
+      padding-left: 16px;
+      padding-right: 16px;
+      width: 50%;
+  }
+</style>
+
 <title>AL-1-0</title>
 </head>
 
@@ -30,10 +47,7 @@
        <nav>
         <ul>
           <li>
-            <a href="#about-section"><strong>About</strong></a>
-          </li>
-          <li>
-            <a href="#services-section"><strong>Services</strong></a>
+            <a href="#about-section"><strong>Intro</strong></a>
           </li>
           <li>
             <a href="#contact"><strong>Contact</strong></a>
@@ -44,126 +58,73 @@
 <!-- Welcome Section -->
 
   <section id="welcome-section" class="welcome-section">
-    <h1 class="animate__animated animate__fadeInRight">
-      AL-1-0
+      <h1>
+      AL
     </h1>
-
-    <div class="container">
-      <img class="img-1" src="img/undraw_static_website_0107.svg" onerror="this.onerror=null; this.src='img/undraw_static_website_0107.png'" alt="cartoon man standing next to a screen showing a website">
-    </div>
+    <h2 class="about-section-header"></h2>
       <h2>
-          Indie Web Developer from Glasgow
+          Web Developer
         </h2>
 	</section>
 
   <!-- End of Welcome Section -->
 
-<aside>
-
 <!-- About Section -->
   <section id="about-section" class="about-section">
     <h2 class="about-section-header">
-      About
+      Al in 2022
     </h2>
     <p>
-      I am an independent web developer based in the south side of Glasgow. I have 4 years experience in designing and developing websites, creating digital content, and archiving/managing digital materials.
+      Al is a human web developer based in Glasgow, Scotland.
+    </p> 
+      <p>
+        Al is a graduate of Digital Media & Information Studies from <strong><a href="https://www.gla.ac.uk/undergraduate/degrees/digitalmedia/">Glasgow University</a></strong>
+      </p>
+    <p>
+      Al is currently a MSc Student in Mobile Web Development at <strong><a href="https://www.uws.ac.uk/study/postgraduate/postgraduate-course-search/mobile-web-development/">UWS</a></strong>.
     </p>
-    <p>Designing websites with responsive and attractive user interfaces was once a hobbie and now it's my career. Your project, be it an independent business, a band site, or a SaaS startup, shall be treated professionally by a highly qualified expert of the Web.
+    <p>
+      Al's industry knowledge is in tech, music & visual arts, leisure & tourism, and startup businesses.
     </p>
-    <p>If your web project requires the use of a particular stack of web technologies, then be assured that the following languages, libraries, and content management systems have been mastered:</p></br>
-
-<div class="skills-grid">
-      <a href="https://www.w3schools.com/whatis/whatis_html.asp" rel="nofollow" target="_blank" class="skills skills-title">
-        <i class="fa fa-html5 fa-3x" alt="HTML5"></i>
-        <p class="skills-title" style="align-items: center;">
-        <span class="code"</span>
-        HTML5
-        <span class="code"</span>
-        </p>
-      </a>
-     <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS" rel="nofollow" target="_blank" class="skills skills-title">
-        <i class="fa fa-css3 fa-3x" alt="CSS3"></i>
-        <p class="skills-title">
-        <span class="code"</span>
-        CSS3
-        <span class="code"</span>
-        </p>
-      </a>
-      <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript" rel="nofollow" target="_blank" class="skills skills-title">
-         <i class="fab fa-js fa-3x"></i>
-         <p class="skills-title">
-         <span class="code"</span>
-         JavaScript
-         <span class="code"</span>
-         </p>
-      </a>
-      <a href="https://www.php.net/"  rel="nofollow" target="_blank" class="skills skills-title">
-         <i class="fab fa-php fa-3x"></i>
-         <p class="skills-title">
-         <span class="code"</span>
-         PHP
-         <span class="code"</span>
-         </p>
-      </a>
-      <a href="https://www.w3schools.com/whatis/whatis_react.asp"  rel="nofollow" target="_blank" class="skills skills-title">
-         <i class="fab fa-react fa-3x"></i>
-         <p class="skills-title">
-         <span class="code"</span>
-         React
-         <span class="code"</span>
-         </p>
-      </a>
-      <a href="https://kinsta.com/knowledgebase/what-is-wordpress/"  rel="nofollow" target="_blank" class="skills skills-title">
-         <i class="fab fa-wordpress-simple fa-3x"></i>
-         <p class="skills-title">
-         <span class="code"</span>
-         WordPress
-         <span class="code"</span>
-         </p>
-      </a>
-      <a href="https://getbootstrap.com"  rel="nofollow" target="_blank" class="skills skills-title">
-         <i class="fab fa-bootstrap fa-3x"></i>
-         <p class="skills-title">
-         <span class="code"</span>
-         Bootstrap
-         <span class="code"</span>
-         </p>
-      </a>
-      <a href="https://www.squarespace.com/"  rel="nofollow" target="_blank" class="skills skills-title">
-         <i class="fab fa-squarespace fa-3x"></i>
-         <p class="skills-title">
-         <span class="code"</span>
-         SquareSpace
-         <span class="code"</span>
-         </p>
-      </a>
-</div>
-</br></br>
-  </section>
-
+    <p>
+      Al follows all the latest web technology trends, design and UX trends.
+    </p> 
+    <p>
+      Al maintains knoweldge of the fundamentals of web development
+    </p>
+  </section> 
   <!-- Services Section -->
 
-  <section id="services-section" class="services-section">
-    <h2 class="services-section-header">
-      Services
+<section id="services-section" class="services-section">
+  <h2 class="services-section-header">
+    2020 - 2021
     </h2>
-    <p>Web Design & Development</p>
-    <p>Site Maintenance</p>
-    <p>Archiving</p>
-    <p>Optimisation</p>
-    <p>Online Payment Systems</p>
-    <p>Digital Asset Managment</p>
-    <p>Marketing & Social Media</p>
-    <br>
     <p>
-      View Al's last project <strong><a href="https://neon-archive.com" target="_blank">here</a></strong></br></br>
+      Tough, yet productive year for Al. 
     </p>
+    <p>
+      Al was commissioned to develop a digital archive...
+    </p>
+<div class="skills-grid">
+<a href="https://www.neon-archive.com" rel="nofollow" target="_blank" class="skills skills-title">
+        <span class="code"</span>
+          <h4>Post from Al :) :) </h4><br>
+          <h5>Al's Recent Work:</h5><br>
+        <strong>NEoN<br> Digital<br> Arts<br> Archive</strong><br><br>
+        <strong>Click to See it :)</strong>
+        <span class="code"</span>
+        </p>
+      </a>
+
+</div> 
+</br></br></br></br>
 </section>
+
 <!-- Contact Section  -->
 
-<section id="contact">
+<section id="contact" class="contact-section">
   <h3>
-    Get in touch
+    Get in touch with Al
   </h3>
 <div id="wrapper">
   <form name="contactMe" id="form" class="topBefore" method="POST" data-netlify="true">
@@ -186,7 +147,29 @@
         </div>
     </div>
   </div>
-    <small className="website-rights">AL-1-0 © 2022 </small>
+  <small className="website-rights">AL-1-0 © 2022 <br><br>
+    Current time: <span id="time"></span></p>
+          <script type="text/javascript">
+              function getTime() {
+                  var date = new Date();
+                  var hours = date.getHours();
+                  var minutes = date.getMinutes();
+                  var seconds = date.getSeconds();
+                  var newformat = hours >= 12 ? "pm" : "am";
+                  hours = hours % 12;
+                  hours = hours ? hours : 12;
+                  minutes = minutes < 10 ? "0" + minutes : minutes;
+                  seconds = seconds < 10 ? "0" + seconds : seconds;
+                  document.getElementById("time").innerHTML =
+                      hours + ":" + minutes + ":" + seconds + " " + newformat;
+              }
+              getTime();
+
+              window.setInterval(function () {
+                  getTime();
+              }, 1000);
+          </script>
+  </small>
 </footer>
 
 <!-- Navbar Syntax -->
