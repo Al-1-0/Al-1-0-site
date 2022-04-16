@@ -8,7 +8,7 @@
   --main-blue: #45567d;
   --main-gray: #232528;
   --main-purple: #77457d;
-  --main-green: #457d77;
+  /* --main-green: #457d77; */
   --main-light-green: #65BAA8;
   --main-yellow: #F5F2B8;
   --main-light-blue: #C5FCEF;
@@ -109,7 +109,7 @@ p {
   text-align: center;
 }
 
-                                        /* Welcome section */
+                                    /***** Welcome section */
 
 .welcome-section {
   display: flex;
@@ -119,6 +119,10 @@ p {
   width: 100%;
   height: 100vh;
   background: var(--main-gray);
+  background-image: url("planet.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .welcome-section > p {
   font-size: 1.6rem;
@@ -138,7 +142,9 @@ p {
     font-size: 4rem;
   }
 }
-                                    /* About Section */
+
+
+                                    /***** Intro Section *****/
 
 .intro-section {
   display: flex;
@@ -176,7 +182,7 @@ p {
     font-size: 26px;
   }
 }
-
+                                    /**** XMR Section *****/
 .xmr-section {
   display: flex;
   flex-direction: column;
@@ -214,8 +220,7 @@ p {
   }
 }
 
-
-	                    /* Video Responsivity */
+	                              /* Video Responsivity */
 
 	.videoWrapper { 
     position: relative; 
@@ -248,7 +253,7 @@ p {
     border: 5px solid #0E9BDC;
 		}
 	}
-                      /* Button Styling */
+                                /***** Button Styling *****/
 
  .butn-container {
   display: flex;
@@ -297,10 +302,9 @@ p {
     max-width: 60%;
   } 
 }
+                          /*** Old Contact Section ****/
 
-                          /* Contact Section */
-
-.contact-section {
+/* .contact-section {
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -339,7 +343,8 @@ p {
   margin-left: 1.6rem;
   margin-right: 1.6rem;
 }
-
+ */ 
+                      /***** Links Rules ******/ 
 a {
   text-decoration: none;
   font-size: 14px;
@@ -368,9 +373,9 @@ ul {
   justify-content: center;
   margin-left: 1.6rem;
   margin-right: 1.6rem;
-}
+} 
 
-                    /****  Navigation ******/
+                    /****  Navigation Rules ******/
 
 body h1 > span {
   text-transform: none;
@@ -460,7 +465,7 @@ body input:checked ~ nav > ul > li {
   transition-delay: 0.5s;
 }
 
-                            /* CONTACT SECTION  */
+                            /* NEW CONTACT SECTION  */
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -573,7 +578,8 @@ body, button, input {
   display: flex;
   flex-direction: column;
   position: relative;
-  color: #ea1d6f;
+  /* color: #ea1d6f; */
+  color: var(--main-light-blue);
   font-size: 26px;
 }
 
@@ -613,7 +619,8 @@ body, button, input {
   background: none;
   border: none;
   border-bottom: 1px solid #666;
-  color: #ddd;
+  /* color: #ddd; */
+  color: var(--main-light-green);
   font-size: 14px;
   text-transform: uppercase;
   outline: none;
@@ -699,5 +706,5 @@ body, button, input {
 }
 
 .footer-container {
-  background: var(--main-yellow);
+  background: var(--main-light-blue);
 }
