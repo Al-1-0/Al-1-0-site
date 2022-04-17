@@ -8,10 +8,10 @@
   --main-blue: #45567d;
   --main-gray: #232528;
   --main-purple: #77457d;
-  /* --main-green: #457d77; */
   --main-light-green: #65BAA8;
   --main-yellow: #F5F2B8;
   --main-light-blue: #C5FCEF;
+  --main-pink: #FFE3ED;
 }
 
   /* Base reset */
@@ -48,8 +48,8 @@ h1 {
   text-align: center;
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 10px;
-  padding-bottom: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .h1-white {
@@ -85,14 +85,14 @@ h3 {
   padding-top: 20px;
   padding-left: 5%;
   padding-right: 5%;
-  padding-bottom: 3vh;
+  padding-bottom: 30vh;
 }
 
 .h3-red {
-  font-family: 'Inter', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: red;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 36px;
   text-align: center;
   padding-top: 20px;
   padding-left: 5%;
@@ -151,7 +151,7 @@ p {
   flex-direction: column;
   justify-content: left;
   width: 100%;
-  height: 150vh;
+  height: 100vh;
   background: var(--main-light-blue);
 }
 
@@ -181,6 +181,9 @@ p {
   h2 {
     font-size: 26px;
   }
+  .intro-section {
+    height: 150vh;
+  }
 }
                                     /**** XMR Section *****/
 .xmr-section {
@@ -188,7 +191,7 @@ p {
   flex-direction: column;
   justify-content: left;
   width: 100%;
-  height: 250vh;
+  height: 150vh;
   background: #ea1d6f;
 }
 
@@ -197,7 +200,6 @@ p {
   font-size: 1.6rem;
   padding-left: 25%;
   padding-right: 25%;
-  padding-bottom: 1.5vh;
   text-align: center;
   color: var(--main-gray);
 }
@@ -205,7 +207,6 @@ p {
 .xmr-section-header > h1 {
   text-align: center;
   padding-top: 60px;  
-  padding-bottom: 6rem;
   max-width: 640px;
   margin: 0;
   color: var(--main-white);
@@ -218,15 +219,21 @@ p {
   h2 {
     font-size: 26px;
   }
+  .xmr-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+    height: 250vh;
+    background: #ea1d6f;
+  }
 }
-
 	                              /* Video Responsivity */
 
 	.videoWrapper { 
     position: relative; 
     padding-bottom: 56.25%; /* 16:9 */ 
     height: 0; 
-    border: 15px solid #0E9BDC;
   }
 	
   .videoWrapper iframe { 
@@ -235,22 +242,19 @@ p {
     left: 0; 
     width: 100%; 
     height: 100%; 
-    border: 15px solid #0E9BDC; }
-
+  }
 	@media (max-width: 28.75em) {
 		.videoWrapper { 
       position: relative; 
       display: flex;
-      max-width: 80%;
+      max-width: 100%;
 		}
-
 		.videoWrapper iframe {
 		position: absolute; 
     top: 0; 
     left: 0; 
-    max-width: 80%; 
+    max-width: 100%; 
     height: 100%; 
-    border: 5px solid #0E9BDC;
 		}
 	}
                                 /***** Button Styling *****/
