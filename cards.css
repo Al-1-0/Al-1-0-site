@@ -19,7 +19,7 @@
   flex-direction: column;
   justify-content: left;
   width: 100%;
-  height: 125vh;
+  height: 100vh;
   background: var(--main-pink);
 }
 
@@ -35,7 +35,7 @@
 
 .cards-section-header > h1 {
   text-align: center;
-  padding-top: 60px;  
+  padding-top: 60px;
   padding-bottom: 6rem;
   max-width: 640px;
   margin: 0;
@@ -45,17 +45,17 @@
 @media (max-width: 28.75em) {
   .cards-section {
     font-size: 14px;
-    height: 150vh;
+    height: 200vh;
   }
   h2 {
     font-size: 26px;
   }
 }
-  
+
   /* h1 {
     text-align: center;
   } */
-  
+
   .cards-container {
     display: flex;
     flex-flow: column;
@@ -64,23 +64,23 @@
     width: 90%;
     margin: 0 auto;
   }
-  
+
   .cards-wrapper {
     position: relative;
     margin: 50px 0 45px;
   }
-  
+
   .cards-items {
     margin-bottom: 24px;
   }
-  
+
   .cards-item {
     display: flex;
     flex: 1;
     margin: 0 1rem;
     border-radius: 10px;
   }
-  
+
   .cards-item-link {
     display: flex;
     flex-flow: column;
@@ -92,20 +92,20 @@
     overflow: hidden;
     text-decoration: none;
   }
-  
+
   .cards-item-pic-wrap {
     position: relative;
     width: 100%;
     padding-top: 67%;
     overflow: hidden;
   }
-  
+
   .fade-img {
     animation-name: fade-img;
     animation-duration: 2s;
   }
-  
-  .cards-item-pic-wrap::after {
+
+  /* .cards-item-pic-wrap::after {
     content: attr(data-category);
     position: absolute;
     bottom: 0;
@@ -117,8 +117,8 @@
     color: #fff;
     background-color: #1f98f4;
     box-sizing: border-box;
-  }
-  
+  } */
+
   .cards-item-img {
     position: absolute;
     top: 0;
@@ -133,15 +133,15 @@
     object-fit: cover;
     transition: all 0.2s linear;
   }
-  
+
   .cards-item-img:hover {
     transform: scale(1.1);
   }
-  
+
   .cards-item-info {
     padding: 20px 30px 30px;
   }
-  
+
   .cards-item-text {
     color: #252e48;
     font-family: 'Courier New', Courier, monospace;
@@ -151,19 +151,19 @@
     line-height: 24px;
     background: va(--main-white);
   }
-  
+
   @media only screen and (min-width: 1200px) {
     .content-blog-container {
       width: 84%;
     }
   }
-  
+
   @media only screen and (min-width: 1024px) {
     .cards-items {
       display: flex;
     }
   }
-  
+
   @media only screen and (max-width: 1024px) {
     .cards-item {
       margin-bottom: 2rem;
