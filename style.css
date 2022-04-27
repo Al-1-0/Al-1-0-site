@@ -133,7 +133,7 @@ p {
 .welcome-section-header {
   text-align: left;
   max-width: 640px;
-  margin: 0 auto 0 auto; 
+  margin: 0 auto 0 auto;
   color: var(--main-light-green);
 }
 
@@ -151,7 +151,7 @@ p {
   flex-direction: column;
   justify-content: left;
   width: 100%;
-  height: 100vh;
+  height: 150vh;
   background: var(--main-light-blue);
 }
 
@@ -167,7 +167,7 @@ p {
 
 .intro-section-header > h1 {
   text-align: center;
-  padding-top: 60px;  
+  padding-top: 60px;
   padding-bottom: 6rem;
   max-width: 640px;
   margin: 0;
@@ -182,9 +182,11 @@ p {
     font-size: 26px;
   }
   .intro-section {
-    height: 150vh;
+    height: 250vh;
   }
 }
+
+
                                     /**** XMR Section *****/
 .xmr-section {
   display: flex;
@@ -206,7 +208,7 @@ p {
 
 .xmr-section-header > h1 {
   text-align: center;
-  padding-top: 60px;  
+  padding-top: 60px;
   max-width: 640px;
   margin: 0;
   color: var(--main-white);
@@ -230,31 +232,31 @@ p {
 }
 	                              /* Video Responsivity */
 
-	.videoWrapper { 
-    position: relative; 
-    padding-bottom: 56.25%; /* 16:9 */ 
-    height: 0; 
+	.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
   }
-	
-  .videoWrapper iframe { 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%; 
+
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 	@media (max-width: 28.75em) {
-		.videoWrapper { 
-      position: relative; 
+		.videoWrapper {
+      position: relative;
       display: flex;
       max-width: 100%;
 		}
 		.videoWrapper iframe {
-		position: absolute; 
-    top: 0; 
-    left: 0; 
-    max-width: 100%; 
-    height: 100%; 
+		position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    height: 100%;
 		}
 	}
                                 /***** Button Styling *****/
@@ -266,16 +268,16 @@ p {
   width: 100%;
   background: var(--main-light-blue);
 }
- 
+
  .butn {
   background: #bfcdd6;
   background-image: -webkit-linear-gradient(top, #bfcdd6, #bfcdd6);
   background-image: -moz-linear-gradient(top, #bfcdd6, #bfcdd6);
   background-image: -ms-linear-gradient(top, #bfcdd6, #bfcdd6);
   background-image: -o-linear-gradient(top, #bfcdd6, #bfcdd6);
-  background-image: linear-gradient(to bottom, #bfcdd6, #bfcdd6); 
+  background-image: linear-gradient(to bottom, #bfcdd6, #bfcdd6);
   -webkit-border-radius: 60;
-  -moz-border-radius: 60; 
+  -moz-border-radius: 60;
   border-radius: 60px;
   font-family: Courier New;
   color: #ffffff;
@@ -283,8 +285,8 @@ p {
   padding: 10px 40px 10px 40px;
   text-decoration: none;
   max-width: 60%;
-  min-width: 30%; 
-} 
+  min-width: 30%;
+}
 
 .butn:hover {
   background: #3cb0fd;
@@ -293,7 +295,7 @@ p {
   background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
   background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 @media (max-width: 30.625em) {
@@ -304,51 +306,10 @@ p {
     color: #ffffff;
     font-size: 14px;
     max-width: 60%;
-  } 
-}
-                          /*** Old Contact Section ****/
-
-/* .contact-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  width: 100%;
-  height: 75vh;
-}
-
-@media (max-width: 30.625em) {
-  .about-section {
-  padding: 6rem 1rem;
-  }
-
-  .skills-grid {
-  grid-template-columns: 1fr;
   }
 }
 
-.skills {
-  background: var(--main-purple);
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  border-radius: 2px;
-}
-
-.code {
-  color: #ff7f50;
-  transition: color 0.3s ease-out;
-}
-
-.skills:hover .code {
-  color: #ff7f50;
-}
-
-.skills-title {
-  font-size: 1.6rem;
-  padding: 2rem 0.5rem;
-  margin-left: 1.6rem;
-  margin-right: 1.6rem;
-}
- */ 
-                      /***** Links Rules ******/ 
+                      /***** Links Rules ******/
 a {
   text-decoration: none;
   font-size: 14px;
@@ -377,7 +338,7 @@ ul {
   justify-content: center;
   margin-left: 1.6rem;
   margin-right: 1.6rem;
-} 
+}
 
                     /****  Navigation Rules ******/
 
