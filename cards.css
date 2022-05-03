@@ -23,6 +23,18 @@
   background: var(--main-pink);
 }
 
+@media (max-width: 46.50em) {
+  .cards-section {
+    height: 450vh;
+  }
+}
+
+@media (max-width: 28.75em) {
+  .cards-section {
+    height: 250vh;
+  }
+}
+
 .cards-section > p {
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.6rem;
@@ -51,10 +63,6 @@
     font-size: 26px;
   }
 }
-
-  /* h1 {
-    text-align: center;
-  } */
 
   .cards-container {
     display: flex;
@@ -104,20 +112,6 @@
     animation-name: fade-img;
     animation-duration: 2s;
   }
-
-  /* .cards-item-pic-wrap::after {
-    content: attr(data-category);
-    position: absolute;
-    bottom: 0;
-    margin-left: 10px;
-    padding: 6px 8px;
-    max-width: calc((100%) - 60px);
-    font-size: 12px;
-    font-weight: 700;
-    color: #fff;
-    background-color: #1f98f4;
-    box-sizing: border-box;
-  } */
 
   .cards-item-img {
     position: absolute;
