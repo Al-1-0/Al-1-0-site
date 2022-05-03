@@ -23,18 +23,6 @@
   background: var(--main-pink);
 }
 
-@media (max-width: 46.50em) {
-  .cards-section {
-    height: 450vh;
-  }
-}
-
-@media (max-width: 28.75em) {
-  .cards-section {
-    height: 250vh;
-  }
-}
-
 .cards-section > p {
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.6rem;
