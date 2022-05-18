@@ -11,7 +11,7 @@
   --main-purple: #77457d;
   --main-light-green: #65BAA8;
   --main-yellow: #F5F2B8;
-  --main-light-blue: #C5FCEF;
+  --main-light-blue: #45567d;
   --main-medium-gray: #939393;
 }
 
@@ -28,10 +28,16 @@
 }
 
                                       /***** Body  / HTML ******/
-body {
+/* body {
   background: linear-gradient(180deg, #f0f0f0 0%, #939393 50%, #232528 70%);
   background-repeat: no-repeat;
+} */
+
+body {
+  background: linear-gradient(180deg, #f0f0f0 0%, #45567d 60%, #45567d 80%);
+  background-repeat: no-repeat;
 }
+
 html {
   box-sizing: border-box;
   background: var(--main-gray);
@@ -350,7 +356,6 @@ p {
 		}
 	}
 
-
                                 /**** Button Styling *****/
 
  .butn-container {
@@ -361,10 +366,10 @@ p {
 }
 
  .butn {
-  background: #F5F2B8;
+  background: var(--main-white);
   -webkit-border-radius: 60;
   -moz-border-radius: 60;
-  border-radius: 60px;
+  border-radius: 0px;
   border-color: #000;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 1.4px;
@@ -372,10 +377,10 @@ p {
   color: #000 !important;
   font-size: 18px;
   font-weight: bold !important;
-  padding: 10px 40px 10px 40px;
+  padding: 10px 60px 10px 60px;
   text-decoration: none;
-  max-width: 60%;
-  min-width: 30%;
+  max-width: 70%;
+  min-width: 50%;
 }
 
 .butn:hover {
@@ -385,15 +390,30 @@ p {
 
 @media (max-width: 30.625em) {
   .butn {
-    border-radius: 60px;
+    border-radius: 0px;
     border-color: #000;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    padding: 5px 40px 5px 40px;
+    padding: 5px 60px 5px 60px;
     color: #000 !important;
     font-size: 14px;
     font-weight: bolder !important;
-    max-width: 60%;
+    max-width: 70%;
+    min-width: 70%;
+  }
+}
+@media (max-width: 50.625em) {
+  .butn {
+    border-radius: 0px;
+    border-color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding: 5px 60px 5px 60px;
+    color: #000 !important;
+    font-size: 14px;
+    font-weight: bolder !important;
+    max-width: 70%;
+    min-width: 70%;
   }
 }
 
@@ -415,7 +435,7 @@ a:visited {
 
 a:hover {
   text-decoration: none;
-  color: #F5F2B8 !important;
+  color: var(--main-white) !important;
 }
 
 ul {
@@ -541,7 +561,7 @@ body, button, input {
 
 .background {
   display: flex;
-  min-height: 50vh;
+  min-height: 40vh;
 }
 
 .container {
