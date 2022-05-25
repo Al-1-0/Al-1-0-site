@@ -53,6 +53,7 @@ h1 {
   letter-spacing: 1.4px;
   font-size: 60px;
   color: black;
+  background: var(--main-white);
   text-align: center;
   padding-left: 5%;
   padding-right: 5%;
@@ -65,7 +66,7 @@ h2 {
   font-weight: 700;
   letter-spacing: 1.4px;
   font-size: 60px;
-  color: #06e;
+  color: black;
   font-size: 34px;
   text-align: center;
   padding-top: 1vh;
