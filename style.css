@@ -34,7 +34,7 @@
 } */
 
 body {
-  background: linear-gradient(180deg, #f0f0f0 0%, #45567d 60%, #45567d 80%);
+  background: linear-gradient(180deg, #f0f0f0 0%, #c5ccd6 45%, #45567d 77%);
   background-repeat: no-repeat;
 }
 
@@ -52,7 +52,7 @@ h1 {
   font-weight: 700;
   letter-spacing: 1.4px;
   font-size: 60px;
-  color: #be3144;
+  color: black;
   text-align: center;
   padding-left: 5%;
   padding-right: 5%;
@@ -65,9 +65,8 @@ h2 {
   font-weight: 700;
   letter-spacing: 1.4px;
   font-size: 60px;
-  color: #be3144;
+  color: #06e;
   font-size: 34px;
-  color: black;
   text-align: center;
   padding-top: 1vh;
   padding-left: 5%;
@@ -79,13 +78,13 @@ h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   letter-spacing: 1.4px;
-  font-size: 60px;
-  color: #be3144;
+  font-size: 40px;
+  color: var(--main-white);
   text-align: center;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-left: 5%;
   padding-right: 5%;
-  padding-bottom: 30vh;
+  padding-bottom: 10vh;
 }
 
 .h3-red {
@@ -184,13 +183,40 @@ p {
 
 @media (max-width: 46.50em) {
   .intro-section {
-    height: 300vh;
+    height: 200vh;
   }
 }
 
 @media (max-width: 28.75em) {
 
   .intro-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+    height: 300vh;
+  }
+}
+
+                                /**** Projects Section ****/
+
+.project-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 100%;
+  height: 175vh;
+}
+
+@media (max-width: 46.50em) {
+  .project-section {
+    height: 200vh;
+  }
+}
+
+@media (max-width: 28.75em) {
+
+  .project-section {
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -269,7 +295,7 @@ p {
 
 @media (max-width: 46.50em) {
   .contact-section {
-    height: 150vh;
+    height: 100vh;
   }
 }
 
@@ -669,7 +695,7 @@ body, button, input {
 .app-form-button {
   background: none;
   border: none;
-  color: var(--main-red);
+  color: var(--main-white);
   font-size: 14px;
   cursor: pointer;
   outline: none;
