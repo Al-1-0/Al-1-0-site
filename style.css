@@ -67,6 +67,7 @@ h2 {
   letter-spacing: 1.4px;
   font-size: 60px;
   color: black;
+  background: var(--main-light-gray);
   font-size: 34px;
   text-align: center;
   padding-top: 1vh;
