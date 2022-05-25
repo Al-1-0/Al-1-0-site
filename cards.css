@@ -161,6 +161,15 @@
     text-align: center;
     line-height: 24px;
   }
+.cards-item-info:hover {
+    background: #3cb0fd;
+    text-decoration: none;
+  }
+  .cards-item-text-dark:hover {
+      background: #3cb0fd;
+      color: var(--main-white);
+      text-decoration: none;
+    }
 
   @media only screen and (min-width: 1200px) {
     .content-blog-container {
