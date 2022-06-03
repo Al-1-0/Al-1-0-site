@@ -185,7 +185,7 @@ p {
 
 @media (max-width: 46.50em) {
   .intro-section {
-    height: 200vh;
+    height: 400vh;
   }
 }
 
@@ -196,7 +196,7 @@ p {
     flex-direction: column;
     justify-content: left;
     width: 100%;
-    height: 300vh;
+    height: 400vh;
   }
 }
 
@@ -223,7 +223,7 @@ p {
     flex-direction: column;
     justify-content: left;
     width: 100%;
-    height: 300vh;
+    height: 400vh;
   }
 }
 
@@ -297,13 +297,13 @@ p {
 
 @media (max-width: 46.50em) {
   .contact-section {
-    height: 100vh;
+    height: 200vh;
   }
 }
 
 @media (max-width: 28.75em) {
   .contact-section {
-    height: 100vh;
+    height: 200vh;
   }
 }
 
