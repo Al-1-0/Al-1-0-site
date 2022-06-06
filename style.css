@@ -38,6 +38,19 @@ body {
   background-repeat: no-repeat;
 }
 
+@media screen and (orientation:landscape)
+and (min-device-width: 319px)
+and (max-device-width: 480px) {
+   body {
+     display: flex;
+     flex-direction: column;
+     justify-content: left;
+     padding-left: 4%;
+     padding-right: 4%;
+     text-align: left;
+   }
+}
+
 html {
   box-sizing: border-box;
   background: var(--main-gray);
