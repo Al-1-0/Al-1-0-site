@@ -187,7 +187,7 @@ p {
 
 @media (max-width: 46.50em) {
   .intro-section {
-    height: 400vh;
+    height: 200vh;
   }
 }
 
@@ -197,7 +197,7 @@ p {
     flex-direction: column;
     justify-content: left;
     width: 100%;
-    height: 300vh;
+    height: 200vh;
   }
 }
 
