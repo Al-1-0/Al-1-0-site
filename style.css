@@ -151,7 +151,7 @@ p {
   top: 0;
   left: 0;
   /* width: 60vw; */
-  object-fit: cover; 
+  object-fit: cover;
   z-index: 1;
   width: -webkit-fill-available;
 }
@@ -708,7 +708,7 @@ body h1>span {
   font-size: 18px;
 }
 
-body input + label {
+body input+label {
   position: fixed;
   top: 5px;
   right: 40px;
@@ -716,7 +716,8 @@ body input + label {
   width: 15px;
   z-index: 5;
 }
-body input + label span {
+
+body input+label span {
   position: absolute;
   width: 150%;
   height: 3px;
@@ -727,51 +728,61 @@ body input + label span {
   background: var(--main-white);
   transition: 0.5s;
 }
-body input + label span:first-child {
+
+body input+label span:first-child {
   top: 3px;
 }
-body input + label span:last-child {
+
+body input+label span:last-child {
   top: 17px;
 }
+
 body label:hover {
   cursor: pointer;
 }
-body input:checked + label span {
+
+body input:checked+label span {
   opacity: 0;
   top: 50%;
 }
-body input:checked + label span:first-child {
+
+body input:checked+label span:first-child {
   opacity: 1;
   transform: rotate(405deg);
 }
-body input:checked + label span:last-child {
+
+body input:checked+label span:last-child {
   opacity: 1;
   transform: rotate(-405deg);
 }
-body input ~ nav {
-    /* background-color: transparent; */
-    background-color: #65BAA8;
-    position: fixed;
-    top: -85px;
-    left: 70%;
-    width: 60%;
-    height: 80px;
-    z-index: 3;
-    transition: 0.5s;
-    transition-delay: 0.5s;
-    overflow: hidden;
+
+body input~nav {
+  /* background-color: transparent; */
+  background-color: #65BAA8;
+  position: fixed;
+  top: -85px;
+  left: 70%;
+  width: 60%;
+  height: 80px;
+  z-index: 3;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+  overflow: hidden;
 }
-body input ~ nav > ul {
-    position: absolute;
-    top: 50%;
-    left: 0%;
+
+body input~nav>ul {
+  position: absolute;
+  top: 50%;
+  left: 0%;
 }
-body input ~ nav > ul > li {
+
+body input~nav>ul>li {
   opacity: 0;
   transition: 0.5s;
   transition-delay: 0s;
 }
-body input ~ nav > ul > li > a {
+
+body input~nav>ul>li>a {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--main-red);
@@ -779,11 +790,13 @@ body input ~ nav > ul > li > a {
   font-family: sans-serif;
   display: block;
 }
-body input:checked ~ nav {
+
+body input:checked~nav {
   height: 30%;
   transition-delay: 0s;
 }
-body input:checked ~ nav > ul > li {
+
+body input:checked~nav>ul>li {
   opacity: 1;
   transition-delay: 0.5s;
 }
