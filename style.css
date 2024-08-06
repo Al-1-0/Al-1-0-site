@@ -837,8 +837,7 @@ input {
 .screen {
   position: relative;
   background: var(--main-gray);
-  border:
-    border-radius: 0px;
+  border-radius: 0px;
   min-width: 500px
 }
 
