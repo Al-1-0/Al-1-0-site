@@ -42,6 +42,20 @@ body {
   margin: 0 auto !important;
 }
 
+/* Skull */
+a#skull #pink-hover {
+  font-size: 2.5em;
+  color: var(--main-white);
+  position: fixed;
+  left: 2vw;
+}
+
+a#skull:hover #pink-hover {
+  color: var(--main-red);
+  transform: scale(1.5);
+  top: 1vh;
+}
+
 html {
   box-sizing: border-box;
   background: var(--main-gray);
@@ -232,6 +246,7 @@ p {
     justify-content: left;
     width: 100%;
     height: auto;
+    margin-bottom: 60vh;
   }
 }
 
@@ -766,6 +781,15 @@ body input~nav {
   transition: 0.5s;
   transition-delay: 0.5s;
   overflow: hidden;
+}
+
+@media (max-width: 28.75em) {
+  body input~nav {
+    left: 60%;
+  }
+  body input+label {
+
+  }
 }
 
 body input~nav>ul {
