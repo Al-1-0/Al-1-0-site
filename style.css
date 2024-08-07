@@ -265,7 +265,7 @@ p {
 
 .spin-card {
   width: 100% !important;
-  height: 100% !important;
+  height: 100vh !important;
   position: relative !important;
   transform-style: preserve-3d;
   transition: transform 0.5s;
