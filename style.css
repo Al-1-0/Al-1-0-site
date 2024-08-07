@@ -513,12 +513,14 @@ p {
 @media (max-width: 46.50em) {
   .contact-section {
     height: auto;
+    margin-top: 20vh;
   }
 }
 
 @media (max-width: 28.75em) {
   .contact-section {
     height: auto;
+    margin-top: 20vh;
   }
 }
 
