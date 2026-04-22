@@ -111,19 +111,31 @@
 
       <script>
         $(document).ready(function () {
-          $('#intro-section .clickable-image').click(function () {
-            var card = $(this).closest('#intro-section .spin-card');
-            card.toggleClass('flipped');
-            card.find('#intro-section .back').toggleClass('visible');
-
-            // Toggle the h2 text
+          function toggleCard() {
+            var $card = $('#intro-section .spin-card');
             var $h2 = $('#intro-section h2');
-            if (card.hasClass('flipped')) {
-              $h2.text('Allan McCafferty');
+
+            $card.toggleClass('flipped');
+
+            if ($card.hasClass('flipped')) {
+              $h2.text('Click to Close');       // ← back-side text
             } else {
-              $h2.text('Click to Reveal Info');
+              $h2.text('Click to Reveal Info'); // ← front-side text
             }
+          }
+
+          // Clicking the card (front or back) toggles it
+          $('#intro-section .spin-card').click(function () {
+            toggleCard();
           });
+
+          // Clicking the h2 also toggles it
+          $('#intro-section h2').click(function () {
+            toggleCard();
+          });
+
+          // Make h2 look clickable
+          $('#intro-section h2').css('cursor', 'pointer');
         });
       </script>
 
