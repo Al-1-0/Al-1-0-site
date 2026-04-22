@@ -8,7 +8,7 @@
     <meta name="keywords" content="web designer, web developer, website, archiving, landing page, glasgow" />
     <meta name="description" content="A" />
     
-    <title>Allan McCafferty</title>
+    <title>AL-1-0</title>
 
     <!-- CSS -->
     <link href="style.css" rel="stylesheet">
@@ -87,7 +87,7 @@
       <div class="spin-card">
 
         <div class="front" style="z-index: 2;">
-          <img src="allan-profile.jpg" class="clickable-image" />
+          <img src="Light of the Dead.png" class="clickable-image" />
         </div>
         <div class="back" style="z-index: 0;">
           <p><br>
@@ -115,6 +115,14 @@
             var card = $(this).closest('#intro-section .spin-card');
             card.toggleClass('flipped');
             card.find('#intro-section .back').toggleClass('visible');
+
+            // Toggle the h2 text
+            var $h2 = $('#intro-section h2');
+            if (card.hasClass('flipped')) {
+              $h2.text('Allan McCafferty');
+            } else {
+              $h2.text('Click to Reveal Info');
+            }
           });
         });
       </script>
